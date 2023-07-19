@@ -16,10 +16,8 @@ class ColorProvider extends ChangeNotifier {
   /// This method is called when the widget is build to generate a random color
   /// to be displayed
   void generateRandomColor() {
-    // TODO: Retrieve last randomly generated color
 
     _backgroundColor = Utils.generateRandomColor();
-
     _contrastingColor = Utils.getContrastingColor(_backgroundColor);
 
     notifyListeners();

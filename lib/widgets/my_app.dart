@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:solid_task/color_provider.dart';
-import 'package:solid_task/home_page.dart';
+import 'package:solid_task/view_model/color_provider.dart';
+import 'package:solid_task/widgets/home_page.dart';
 
 /// Entry class
 class MyApp extends StatelessWidget {

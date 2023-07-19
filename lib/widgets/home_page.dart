@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:solid_task/color_provider.dart';
+import 'package:solid_task/view_model/color_provider.dart';
 
 /// Home page and first screen of the app
 class HomePage extends StatelessWidget {
