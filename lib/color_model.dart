@@ -1,10 +1,13 @@
+import 'package:flutter/material.dart';
+import 'package:solid_task/utils.dart';
+
 /// Data-class for modelling the background and contrasting colors
 class ColorModel {
   /// background / container color
-  final String backgroundColor;
+  final Color backgroundColor;
 
   /// Text color contrasting the background color
-  final String contrastingColor;
+  final Color contrastingColor;
 
   /// class constructor
   const ColorModel({
@@ -15,16 +18,16 @@ class ColorModel {
   /// from JSON implementation
   factory ColorModel.fromJson(Map<String, dynamic> json) {
     return ColorModel(
-      backgroundColor: json['backgroundColor'] as String,
-      contrastingColor: json['contrastingColor'] as String,
+      backgroundColor: Utils.intToColor(json['backgroundColor'] as int),
+      contrastingColor: Utils.intToColor(json['contrastingColor'] as int),
     );
   }
 
   /// to JSON implementation
   Map<String, dynamic> toJson() {
     return {
-      'backgroundColor': backgroundColor,
-      'contrastingColor': contrastingColor,
+      'backgroundColor': backgroundColor.value,
+      'contrastingColor': contrastingColor.value,
     };
   }
 }

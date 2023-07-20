@@ -35,4 +35,9 @@ class Utils {
 
     return Colors.grey;
   }
+
+  /// This method converts a int color value to a usable Color value
+  static Color intToColor(int color) {
+    return Color(color);
+  }
 }

@@ -16,13 +16,13 @@ class HomePage extends StatelessWidget {
           child: AnimatedContainer(
             duration: const Duration(milliseconds: 200),
             curve: Curves.easeIn,
-            color: model.backgroundColor ?? Colors.white,
+            color: model.backgroundColor,
             child: Center(
               child: AnimatedDefaultTextStyle(
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w700,
-                  color: model.contrastingColor ?? Colors.black,
+                  color: model.contrastingColor,
                 ),
                 duration: const Duration(milliseconds: 200),
                 child: const Text("Hello there"),

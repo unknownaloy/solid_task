@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<ColorProvider>(
-      create: (_) => ColorProvider()..generateRandomColor(),
+      create: (_) => ColorProvider()..initializeRandomColor(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
