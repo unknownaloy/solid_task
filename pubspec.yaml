@@ -19,6 +19,7 @@ dependencies:
 dev_dependencies:
   flutter_launcher_icons: ^0.13.1
   flutter_lints: ^2.0.0
+  flutter_native_splash: ^2.3.1
   flutter_test:
     sdk: flutter
   solid_lints: ^0.0.16
@@ -29,6 +30,10 @@ flutter_icons:
   image_path: "assets/images/launcher_icon.png"
   adaptive_icon_foreground: "assets/images/launcher_icon_foreground.png"
   adaptive_icon_background: "assets/images/launcher_icon_background.png"
+
+flutter_native_splash:
+  color: "#0EB5D2"
+  image: "assets/images/splash_image.png"
 
 
 # For information on the generic Dart part of this file, see the
