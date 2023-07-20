@@ -3,7 +3,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 
 import 'package:solid_task/view_model/color_provider.dart';
-import 'package:solid_task/widgets/home_page.dart';
 import 'package:solid_task/widgets/my_app.dart';
 
 void main() {
