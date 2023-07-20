@@ -4,7 +4,7 @@ A simple app that generates random background color on user interaction. The gen
 also persisted on re-launch of the app.
 
 ## Download for Android
-- [👉🏼 Download and Install the Solid Task App](https://github.com/unknownaloy/futurama_app/raw/main/apk/solid_task.apk)
+- [👉🏼 Download and Install the Solid Task App](https://github.com/unknownaloy/solid_task/raw/main/apk/solid_task.apk)
 
 ## Prerequisites
 - Ensure you have the Flutter SDK installed on your machine. You can download it from [here](https://docs.flutter.dev/get-started/install)
