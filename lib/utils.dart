@@ -19,7 +19,7 @@ class Utils {
       red,
       green,
       blue,
-    ); // Alpha value of 255 (fully opaque)
+    );
   }
 
   /// This method analysis and returns a contrasting or opposite color to the
