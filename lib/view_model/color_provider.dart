@@ -2,7 +2,8 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:solid_task/color_model.dart';
+import 'package:solid_task/constants.dart';
+import 'package:solid_task/model/color_model.dart';
 import 'package:solid_task/utils.dart';
 
 /// ChangeNotifier class responsible for maintaining the colors to be displayed
@@ -22,7 +23,7 @@ class ColorProvider extends ChangeNotifier {
   Future<void> initializeRandomColor() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
 
-    final userPreference = prefs.getString("userPreference");
+    final userPreference = prefs.getString(kUserPreference);
 
     /// User already had color generated from previous interaction with the app
     if (userPreference != null) {
@@ -43,8 +44,6 @@ class ColorProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-
-
   /// Method to generate new random background and contrasting color and also
   /// saving the new selection in SharedPreferences
   Future<void> generateRandomColor() async {
@@ -63,7 +62,7 @@ class ColorProvider extends ChangeNotifier {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
 
     await prefs.setString(
-      "userPreference",
+      kUserPreference,
       colorData,
     );
   }

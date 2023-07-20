@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:solid_task/constants.dart';
 import 'package:solid_task/view_model/color_provider.dart';
 
 /// Home page and first screen of the app
@@ -20,11 +21,12 @@ class HomePage extends StatelessWidget {
             child: Center(
               child: AnimatedDefaultTextStyle(
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: kHelloTextSize,
                   fontWeight: FontWeight.w700,
                   color: model.contrastingColor,
                 ),
                 duration: const Duration(milliseconds: 200),
+                curve: Curves.easeIn,
                 child: const Text("Hello there"),
               ),
             ),
