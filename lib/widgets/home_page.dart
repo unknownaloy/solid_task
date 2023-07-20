@@ -27,7 +27,10 @@ class HomePage extends StatelessWidget {
                 ),
                 duration: const Duration(milliseconds: 200),
                 curve: Curves.easeIn,
-                child: const Text("Hello there"),
+                child: const Text(
+                  key: Key("main_text"),
+                  "Hello there",
+                ),
               ),
             ),
           ),
